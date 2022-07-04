@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://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@github.com/Ji1Xingyu/P-LOAM.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "devel"]
+	remote = origin
+	merge = refs/heads/devel
