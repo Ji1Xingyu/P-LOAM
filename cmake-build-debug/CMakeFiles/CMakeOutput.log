@@ -425,3 +425,43 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/xingyu/catkin_ws/src/A-LOAM/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/snap/clion/198/bin/ninja/linux/ninja cmTC_03f67 && [1/2] Building C object CMakeFiles/cmTC_03f67.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_03f67
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/xingyu/catkin_ws/src/A-LOAM/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/snap/clion/198/bin/ninja/linux/ninja cmTC_ee254 && [1/2] Building C object CMakeFiles/cmTC_ee254.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_ee254
+
+
+
+Determining if the function dgemm_ exists passed with the following output:
+Change Dir: /home/xingyu/catkin_ws/src/A-LOAM/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/snap/clion/198/bin/ninja/linux/ninja cmTC_66d9e && [1/2] Building C object CMakeFiles/cmTC_66d9e.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_66d9e
+
+
+
+Determining if the function cheev_ exists passed with the following output:
+Change Dir: /home/xingyu/catkin_ws/src/A-LOAM/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/snap/clion/198/bin/ninja/linux/ninja cmTC_0aa57 && [1/2] Building C object CMakeFiles/cmTC_0aa57.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_0aa57
+
+
+
+Determining if the function shm_open exists in the rt passed with the following output:
+Change Dir: /home/xingyu/catkin_ws/src/A-LOAM/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/snap/clion/198/bin/ninja/linux/ninja cmTC_ae217 && [1/2] Building C object CMakeFiles/cmTC_ae217.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_ae217
+
+
+

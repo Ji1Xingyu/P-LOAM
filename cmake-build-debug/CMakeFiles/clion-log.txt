@@ -7,22 +7,593 @@ CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
   CMake that the project does not need compatibility with older versions.
 
 
-CMake Error at CMakeLists.txt:8 (find_package):
-  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
-  asked CMake to find a package configuration file provided by "catkin", but
-  CMake did not find one.
+-- Using CATKIN_DEVEL_PREFIX: /home/xingyu/catkin_ws/src/A-LOAM/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /home/xingyu/autoware.ai/install/ymc;/home/xingyu/autoware.ai/install/xsens_driver;/home/xingyu/autoware.ai/install/lattice_planner;/home/xingyu/autoware.ai/install/waypoint_planner;/home/xingyu/autoware.ai/install/waypoint_maker;/home/xingyu/autoware.ai/install/way_planner;/home/xingyu/autoware.ai/install/op_utilities;/home/xingyu/autoware.ai/install/op_simulation_package;/home/xingyu/autoware.ai/install/op_local_planner;/home/xingyu/autoware.ai/install/op_global_planner;/home/xingyu/autoware.ai/install/lidar_kf_contour_track;/home/xingyu/autoware.ai/install/op_ros_helpers;/home/xingyu/autoware.ai/install/lane_planner;/home/xingyu/autoware.ai/install/ff_waypoint_follower;/home/xingyu/autoware.ai/install/dp_planner;/home/xingyu/autoware.ai/install/waypoint_follower;/home/xingyu/autoware.ai/install/vlg22c_cam;/home/xingyu/autoware.ai/install/vision_ssd_detect;/home/xingyu/autoware.ai/install/vision_segment_enet_detect;/home/xingyu/autoware.ai/install/vision_lane_detect;/home/xingyu/autoware.ai/install/vision_darknet_detect;/home/xingyu/autoware.ai/install/vision_beyond_track;/home/xingyu/autoware.ai/install/vehicle_socket;/home/xingyu/autoware.ai/install/vehicle_model;/home/xingyu/autoware.ai/install/vehicle_gazebo_simulation_launcher;/home/xingyu/autoware.ai/install/vehicle_gazebo_simulation_interface;/home/xingyu/autoware.ai/install/vehicle_description;/home/xingyu/autoware.ai/install/trafficlight_recognizer;/home/xingyu/autoware.ai/install/op_simu;/home/xingyu/autoware.ai/install/op_planner;/home/xingyu/autoware.ai/install/op_utility;/home/xingyu/autoware.ai/install/lidar_euclidean_cluster_detect;/home/xingyu/autoware.ai/install/vector_map_server;/home/xingyu/autoware.ai/install/road_occupancy_processor;/home/xingyu/autoware.ai/install/costmap_generator;/home/xingyu/autoware.ai/install/object_map;/home/xingyu/autoware.ai/install/naive_motion_predict;/home/xingyu/autoware.ai/install/map_file;/home/xingyu/autoware.ai/install/libvectormap;/home/xingyu/autoware.ai/install/imm_ukf_pda_track;/home/xingyu/autoware.ai/install/decision_maker;/home/xingyu/autoware.ai/install/vector_map;/home/xingyu/autoware.ai/install/vector_map_msgs;/home/xingyu/autoware.ai/install/vectacam;/home/xingyu/autoware.ai/install/udon_socket;/home/xingyu/autoware.ai/install/twist_generator;/home/xingyu/autoware.ai/install/tablet_socket;/home/xingyu/autoware.ai/install/runtime_manager;/home/xingyu/autoware.ai/install/mqtt_socket;/home/xingyu/autoware.ai/install/tablet_socket_msgs;/home/xingyu/autoware.ai/install/state_machine_lib;/home/xingyu/autoware.ai/install/sound_player;/home/xingyu/autoware.ai/install/sick_lms5xx;/home/xingyu/autoware.ai/install/sick_ldmrs_tools;/home/xingyu/autoware.ai/install/sick_ldmrs_driver;/home/xingyu/autoware.ai/install/sick_ldmrs_msgs;/home/xingyu/autoware.ai/install/sick_ldmrs_description;/home/xingyu/autoware.ai/install/points2image;/home/xingyu/autoware.ai/install/rosinterface;/home/xingyu/autoware.ai/install/rosbag_controller;/home/xingyu/autoware.ai/install/roi_object_filter;/home/xingyu/autoware.ai/install/range_vision_fusion;/home/xingyu/autoware.ai/install/pos_db;/home/xingyu/autoware.ai/install/points_preprocessor;/home/xingyu/autoware.ai/install/points_downsampler;/home/xingyu/autoware.ai/install/pixel_cloud_fusion;/home/xingyu/autoware.ai/install/lidar_localizer;/home/xingyu/autoware.ai/install/pcl_omp_registration;/home/xingyu/autoware.ai/install/pc2_downsampler;/home/xingyu/autoware.ai/install/oculus_socket;/home/xingyu/autoware.ai/install/obj_db;/home/xingyu/autoware.ai/install/nmea_navsat;/home/xingyu/autoware.ai/install/ndt_tku;/home/xingyu/autoware.ai/install/ndt_cpu;/home/xingyu/autoware.ai/install/multi_lidar_calibrator;/home/xingyu/autoware.ai/install/microstrain_driver;/home/xingyu/autoware.ai/install/memsic_imu;/home/xingyu/autoware.ai/install/marker_downsampler;/home/xingyu/autoware.ai/install/map_tools;/home/xingyu/autoware.ai/install/map_tf_generator;/home/xingyu/autoware.ai/install/log_tools;/home/xingyu/autoware.ai/install/lidar_shape_estimation;/home/xingyu/autoware.ai/install/lidar_point_pillars;/home/xingyu/autoware.ai/install/lidar_naive_l_shape_detect;/home/xingyu/autoware.ai/install/lidar_fake_perception;/home/xingyu/autoware.ai/install/lidar_apollo_cnn_seg_detect;/home/xingyu/autoware.ai/install/lgsvl_simulator_bridge;/home/xingyu/autoware.ai/install/kvaser;/home/xingyu/autoware.ai/install/kitti_launch;/home/xingyu/autoware.ai/install/kitti_player;/home/xingyu/autoware.ai/install/kitti_box_publisher;/home/xingyu/autoware.ai/install/javad_navsat_driver;/home/xingyu/autoware.ai/install/integrated_viewer;/home/xingyu/autoware.ai/install/image_processor;/home/xingyu/autoware.ai/install/hokuyo;/home/xingyu/autoware.ai/install/graph_tools;/home/xingyu/autoware.ai/install/gnss_localizer;/home/xingyu/autoware.ai/install/gnss;/home/xingyu/autoware.ai/install/glviewer;/home/xingyu/autoware.ai/install/gazebo_world_description;/home/xingyu/autoware.ai/install/gazebo_imu_description;/home/xingyu/autoware.ai/install/gazebo_camera_description;/home/xingyu/autoware.ai/install/garmin;/home/xingyu/autoware.ai/install/freespace_planner;/home/xingyu/autoware.ai/install/fastvirtualscan;/home/xingyu/autoware.ai/install/ekf_localizer;/home/xingyu/autoware.ai/install/ds4_msgs;/home/xingyu/autoware.ai/install/ds4_driver;/home/xingyu/autoware.ai/install/detected_objects_visualizer;/home/xingyu/autoware.ai/install/decision_maker_panel;/home/xingyu/autoware.ai/install/data_preprocessor;/home/xingyu/autoware.ai/install/custom_msgs;/home/xingyu/autoware.ai/install/calibration_publisher;/home/xingyu/autoware.ai/install/autoware_health_checker;/home/xingyu/autoware.ai/install/autoware_system_msgs;/home/xingyu/autoware.ai/install/autoware_rviz_plugins;/home/xingyu/autoware.ai/install/autoware_quickstart_examples;/home/xingyu/autoware.ai/install/autoware_pointgrey_drivers;/home/xingyu/autoware.ai/install/autoware_driveworks_interface;/home/xingyu/autoware.ai/install/autoware_connector;/home/xingyu/autoware.ai/install/autoware_camera_lidar_calibrator;/home/xingyu/autoware.ai/install/astar_search;/home/xingyu/autoware.ai/install/as;/home/xingyu/autoware.ai/install/amathutils_lib;/home/xingyu/autoware.ai/install/autoware_msgs;/home/xingyu/autoware.ai/install/autoware_map_msgs;/home/xingyu/autoware.ai/install/autoware_launcher_rviz;/home/xingyu/autoware.ai/install/autoware_launcher;/home/xingyu/autoware.ai/install/autoware_external_msgs;/home/xingyu/autoware.ai/install/autoware_driveworks_gmsl_interface;/home/xingyu/autoware.ai/install/autoware_config_msgs;/home/xingyu/autoware.ai/install/autoware_can_msgs;/home/xingyu/autoware.ai/install/autoware_build_flags;/home/xingyu/autoware.ai/install/autoware_bag_tools;/home/xingyu/autoware.ai/install/adi_driver;/home/xingyu/catkin_ws/devel;/opt/ros/melodic
+-- This workspace overlays: /home/xingyu/autoware.ai/install/ymc;/home/xingyu/autoware.ai/install/xsens_driver;/home/xingyu/autoware.ai/install/lattice_planner;/home/xingyu/autoware.ai/install/waypoint_planner;/home/xingyu/autoware.ai/install/waypoint_maker;/home/xingyu/autoware.ai/install/way_planner;/home/xingyu/autoware.ai/install/op_utilities;/home/xingyu/autoware.ai/install/op_simulation_package;/home/xingyu/autoware.ai/install/op_local_planner;/home/xingyu/autoware.ai/install/op_global_planner;/home/xingyu/autoware.ai/install/lidar_kf_contour_track;/home/xingyu/autoware.ai/install/op_ros_helpers;/home/xingyu/autoware.ai/install/lane_planner;/home/xingyu/autoware.ai/install/ff_waypoint_follower;/home/xingyu/autoware.ai/install/dp_planner;/home/xingyu/autoware.ai/install/waypoint_follower;/home/xingyu/autoware.ai/install/vlg22c_cam;/home/xingyu/autoware.ai/install/vision_ssd_detect;/home/xingyu/autoware.ai/install/vision_segment_enet_detect;/home/xingyu/autoware.ai/install/vision_lane_detect;/home/xingyu/autoware.ai/install/vision_darknet_detect;/home/xingyu/autoware.ai/install/vision_beyond_track;/home/xingyu/autoware.ai/install/vehicle_socket;/home/xingyu/autoware.ai/install/vehicle_model;/home/xingyu/autoware.ai/install/vehicle_gazebo_simulation_launcher;/home/xingyu/autoware.ai/install/vehicle_gazebo_simulation_interface;/home/xingyu/autoware.ai/install/vehicle_description;/home/xingyu/autoware.ai/install/trafficlight_recognizer;/home/xingyu/autoware.ai/install/op_simu;/home/xingyu/autoware.ai/install/op_planner;/home/xingyu/autoware.ai/install/op_utility;/home/xingyu/autoware.ai/install/lidar_euclidean_cluster_detect;/home/xingyu/autoware.ai/install/vector_map_server;/home/xingyu/autoware.ai/install/road_occupancy_processor;/home/xingyu/autoware.ai/install/costmap_generator;/home/xingyu/autoware.ai/install/object_map;/home/xingyu/autoware.ai/install/naive_motion_predict;/home/xingyu/autoware.ai/install/map_file;/home/xingyu/autoware.ai/install/libvectormap;/home/xingyu/autoware.ai/install/imm_ukf_pda_track;/home/xingyu/autoware.ai/install/decision_maker;/home/xingyu/autoware.ai/install/vector_map;/home/xingyu/autoware.ai/install/vector_map_msgs;/home/xingyu/autoware.ai/install/vectacam;/home/xingyu/autoware.ai/install/udon_socket;/home/xingyu/autoware.ai/install/twist_generator;/home/xingyu/autoware.ai/install/tablet_socket;/home/xingyu/autoware.ai/install/runtime_manager;/home/xingyu/autoware.ai/install/mqtt_socket;/home/xingyu/autoware.ai/install/tablet_socket_msgs;/home/xingyu/autoware.ai/install/state_machine_lib;/home/xingyu/autoware.ai/install/sound_player;/home/xingyu/autoware.ai/install/sick_lms5xx;/home/xingyu/autoware.ai/install/sick_ldmrs_tools;/home/xingyu/autoware.ai/install/sick_ldmrs_driver;/home/xingyu/autoware.ai/install/sick_ldmrs_msgs;/home/xingyu/autoware.ai/install/sick_ldmrs_description;/home/xingyu/autoware.ai/install/points2image;/home/xingyu/autoware.ai/install/rosinterface;/home/xingyu/autoware.ai/install/rosbag_controller;/home/xingyu/autoware.ai/install/roi_object_filter;/home/xingyu/autoware.ai/install/range_vision_fusion;/home/xingyu/autoware.ai/install/pos_db;/home/xingyu/autoware.ai/install/points_preprocessor;/home/xingyu/autoware.ai/install/points_downsampler;/home/xingyu/autoware.ai/install/pixel_cloud_fusion;/home/xingyu/autoware.ai/install/lidar_localizer;/home/xingyu/autoware.ai/install/pcl_omp_registration;/home/xingyu/autoware.ai/install/pc2_downsampler;/home/xingyu/autoware.ai/install/oculus_socket;/home/xingyu/autoware.ai/install/obj_db;/home/xingyu/autoware.ai/install/nmea_navsat;/home/xingyu/autoware.ai/install/ndt_tku;/home/xingyu/autoware.ai/install/ndt_cpu;/home/xingyu/autoware.ai/install/multi_lidar_calibrator;/home/xingyu/autoware.ai/install/microstrain_driver;/home/xingyu/autoware.ai/install/memsic_imu;/home/xingyu/autoware.ai/install/marker_downsampler;/home/xingyu/autoware.ai/install/map_tools;/home/xingyu/autoware.ai/install/map_tf_generator;/home/xingyu/autoware.ai/install/log_tools;/home/xingyu/autoware.ai/install/lidar_shape_estimation;/home/xingyu/autoware.ai/install/lidar_point_pillars;/home/xingyu/autoware.ai/install/lidar_naive_l_shape_detect;/home/xingyu/autoware.ai/install/lidar_fake_perception;/home/xingyu/autoware.ai/install/lidar_apollo_cnn_seg_detect;/home/xingyu/autoware.ai/install/lgsvl_simulator_bridge;/home/xingyu/autoware.ai/install/kvaser;/home/xingyu/autoware.ai/install/kitti_launch;/home/xingyu/autoware.ai/install/kitti_player;/home/xingyu/autoware.ai/install/kitti_box_publisher;/home/xingyu/autoware.ai/install/javad_navsat_driver;/home/xingyu/autoware.ai/install/integrated_viewer;/home/xingyu/autoware.ai/install/image_processor;/home/xingyu/autoware.ai/install/hokuyo;/home/xingyu/autoware.ai/install/graph_tools;/home/xingyu/autoware.ai/install/gnss_localizer;/home/xingyu/autoware.ai/install/gnss;/home/xingyu/autoware.ai/install/glviewer;/home/xingyu/autoware.ai/install/gazebo_world_description;/home/xingyu/autoware.ai/install/gazebo_imu_description;/home/xingyu/autoware.ai/install/gazebo_camera_description;/home/xingyu/autoware.ai/install/garmin;/home/xingyu/autoware.ai/install/freespace_planner;/home/xingyu/autoware.ai/install/fastvirtualscan;/home/xingyu/autoware.ai/install/ekf_localizer;/home/xingyu/autoware.ai/install/ds4_msgs;/home/xingyu/autoware.ai/install/ds4_driver;/home/xingyu/autoware.ai/install/detected_objects_visualizer;/home/xingyu/autoware.ai/install/decision_maker_panel;/home/xingyu/autoware.ai/install/data_preprocessor;/home/xingyu/autoware.ai/install/custom_msgs;/home/xingyu/autoware.ai/install/calibration_publisher;/home/xingyu/autoware.ai/install/autoware_health_checker;/home/xingyu/autoware.ai/install/autoware_system_msgs;/home/xingyu/autoware.ai/install/autoware_rviz_plugins;/home/xingyu/autoware.ai/install/autoware_quickstart_examples;/home/xingyu/autoware.ai/install/autoware_pointgrey_drivers;/home/xingyu/autoware.ai/install/autoware_driveworks_interface;/home/xingyu/autoware.ai/install/autoware_connector;/home/xingyu/autoware.ai/install/autoware_camera_lidar_calibrator;/home/xingyu/autoware.ai/install/astar_search;/home/xingyu/autoware.ai/install/as;/home/xingyu/autoware.ai/install/amathutils_lib;/home/xingyu/autoware.ai/install/autoware_msgs;/home/xingyu/autoware.ai/install/autoware_map_msgs;/home/xingyu/autoware.ai/install/autoware_launcher_rviz;/home/xingyu/autoware.ai/install/autoware_launcher;/home/xingyu/autoware.ai/install/autoware_external_msgs;/home/xingyu/autoware.ai/install/autoware_driveworks_gmsl_interface;/home/xingyu/autoware.ai/install/autoware_config_msgs;/home/xingyu/autoware.ai/install/autoware_can_msgs;/home/xingyu/autoware.ai/install/autoware_build_flags;/home/xingyu/autoware.ai/install/autoware_bag_tools;/home/xingyu/autoware.ai/install/adi_driver;/home/xingyu/catkin_ws/devel;/opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/xingyu/catkin_ws/src/A-LOAM/cmake-build-debug/test_results
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+CMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
 
-  Could not find a package configuration file provided by "catkin" with any
-  of the following names:
-
-    catkinConfig.cmake
-    catkin-config.cmake
-
-  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
-  "catkin_DIR" to a directory containing one of the above files.  If "catkin"
-  provides a separate development package or SDK, be sure it has been
-  installed.
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
 
 
--- Configuring incomplete, errors occurred!
-See also "/home/xingyu/catkin_ws/src/A-LOAM/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+CMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:41 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:48 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") 
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.29
+-- BUILD_SHARED_LIBS is on
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (eigen) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:153 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:638 (find_eigen)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:850 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (openni)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:235 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:644 (find_openni)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (OpenNI2)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:280 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:646 (find_openni2)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (ensenso)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:312 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:648 (find_ensenso)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+** WARNING ** io features related to ensenso will be disabled
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (DAVIDSDK)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:346 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:650 (find_davidSDK)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+** WARNING ** io features related to davidSDK will be disabled
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (DSSDK) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:388 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:652 (find_dssdk)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+** WARNING ** io features related to dssdk will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+but not all the files it references.
+
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (libusb-1.0)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:515 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:658 (find_libusb)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+** WARNING ** io features related to libusb-1.0 will be disabled
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (Flann) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:473 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:640 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:850 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (Flann) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:473 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:640 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:850 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (openni)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:235 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:644 (find_openni)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (OpenNI2)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:280 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:646 (find_openni2)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (ensenso)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:312 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:648 (find_ensenso)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+** WARNING ** visualization features related to ensenso will be disabled
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (DAVIDSDK)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:346 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:650 (find_davidSDK)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+** WARNING ** visualization features related to davidSDK will be disabled
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (DSSDK) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:388 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:652 (find_dssdk)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+** WARNING ** visualization features related to dssdk will be disabled
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (RSSDK) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:432 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:654 (find_rssdk)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find RSSDK (missing: _RSSDK_LIBRARIES) 
+** WARNING ** visualization features related to rssdk will be disabled
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (qhull) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:185 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:642 (find_qhull)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (openni)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:235 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:644 (find_openni)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:847 (find_external_library)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_COMMON
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_COMMON)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_OCTREE
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_OCTREE)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_IO
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_IO)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_KDTREE
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_KDTREE)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_SEARCH
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_SEARCH)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_SAMPLE_CONSENSUS
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_SAMPLE_CONSENSUS) does not match the name of the calling package
+  (PCL).  This can lead to problems in calling code that expects
+  `find_package` result variables (e.g., `_FOUND`) to follow a certain
+  pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_FILTERS
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_FILTERS) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_2D
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_2D)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:914 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_GEOMETRY
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_GEOMETRY) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:914 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_FEATURES
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_FEATURES) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_ML
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_ML)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_SEGMENTATION
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_SEGMENTATION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_VISUALIZATION
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_VISUALIZATION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_SURFACE
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_SURFACE) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_REGISTRATION
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_REGISTRATION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_KEYPOINTS
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_KEYPOINTS) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_TRACKING
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_TRACKING) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_RECOGNITION
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_RECOGNITION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_STEREO
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_STEREO)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_APPS
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_APPS)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_IN_HAND_SCANNER
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_IN_HAND_SCANNER) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:914 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_MODELER
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_MODELER) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:914 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_POINT_CLOUD_EDITOR
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_POINT_CLOUD_EDITOR) does not match the name of the calling package
+  (PCL).  This can lead to problems in calling code that expects
+  `find_package` result variables (e.g., `_FOUND`) to follow a certain
+  pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:914 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_OUTOFCORE
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_OUTOFCORE) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_PEOPLE
+CMake Warning (dev) at /snap/clion/198/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_PEOPLE)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:911 (find_package_handle_standard_args)
+  CMakeLists.txt:21 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found AMD headers in: /usr/include/suitesparse
+-- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
+-- Found CAMD headers in: /usr/include/suitesparse
+-- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
+-- Found CCOLAMD headers in: /usr/include/suitesparse
+-- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
+-- Found CHOLMOD headers in: /usr/include/suitesparse
+-- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so
+-- Found COLAMD headers in: /usr/include/suitesparse
+-- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
+-- Found SPQR headers in: /usr/include/suitesparse
+-- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so
+-- Found Config headers in: /usr/include/suitesparse
+-- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+-- Did not find Intel TBB library, assuming SuiteSparseQR was not compiled with TBB.
+-- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+-- Could NOT find METIS (missing: METIS_INCLUDE_DIR) 
+-- Found required Ceres dependency: Eigen version 3.4.0 in /usr/share/eigen3/cmake
+-- Found required Ceres dependency: glog
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 2.1.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+-- Configuring done
+CMake Warning (dev) at CMakeLists.txt:64 (add_dependencies):
+  Policy CMP0046 is not set: Error on non-existent dependency in
+  add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  The dependency target "odom_stream_msg_gencpp" of target
+  "pcl2RangeImgNpole" does not exist.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+-- Build files have been written to: /home/xingyu/catkin_ws/src/A-LOAM/cmake-build-debug

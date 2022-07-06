@@ -76,6 +76,7 @@ ros::Publisher pubCornerPointsLessSharp;
 ros::Publisher pubSurfPointsFlat;
 ros::Publisher pubSurfPointsLessFlat;
 ros::Publisher pubRemovePoints;
+ros::Publisher pubPoleLocation;
 std::vector<ros::Publisher> pubEachScan;
 
 bool PUB_EACH_LINE = false;
@@ -135,6 +136,8 @@ void laserCloudHandler(const sensor_msgs::PointCloud2ConstPtr &laserCloudMsg)
 
     pcl::removeNaNFromPointCloud(laserCloudIn, laserCloudIn, indices);
     removeClosedPointCloud(laserCloudIn, laserCloudIn, MINIMUM_RANGE);
+
+    // start the ImageProjection Phase:
 
 
     int cloudSize = laserCloudIn.points.size();
@@ -207,7 +210,7 @@ void laserCloudHandler(const sensor_msgs::PointCloud2ConstPtr &laserCloudMsg)
 
         float ori = -atan2(point.y, point.x);
         if (!halfPassed)
-        { 
+        {
             if (ori < startOri - M_PI / 2)
             {
                 ori += 2 * M_PI;
