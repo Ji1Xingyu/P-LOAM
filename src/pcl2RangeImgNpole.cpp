@@ -621,7 +621,7 @@ public:
                     poleOdom[0] = segCloudMat.colwise().mean().x();
                     poleOdom[1] = segCloudMat.colwise().mean().y();
                     poleOdom[2] = segCloudMat.colwise().mean().z();
-                    poleOdom[3] = 5;
+                    poleOdom[3] = 12;
                     poleOdom[4] = segCloudMat.colwise().mean().x();
                     poleOdom[5] = segCloudMat.colwise().mean().y();
                     poleOdom[6] = segCloudMat.colwise().mean().z();
