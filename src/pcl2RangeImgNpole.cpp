@@ -618,13 +618,13 @@ public:
                 }
             } else{// if the buff haven't reached 3, fill in
                 for (int i = 0; i < zidxVec.size(); ++i) {
-                    poleOdom[0] = segCloudMat.colwise().mean().x();
-                    poleOdom[1] = segCloudMat.colwise().mean().y();
-                    poleOdom[2] = segCloudMat.colwise().mean().z();
-                    poleOdom[3] = 77;
-                    poleOdom[4] = segCloudMat.colwise().mean().x();
-                    poleOdom[5] = segCloudMat.colwise().mean().y();
-                    poleOdom[6] = segCloudMat.colwise().mean().z();
+                    poleOdom[0] = segCloudMat.colwise().mean().x(); // q_x
+                    poleOdom[1] = segCloudMat.colwise().mean().y(); // q_y
+                    poleOdom[2] = segCloudMat.colwise().mean().z(); // q_z
+                    poleOdom[3] = eigenVal[2];                                // q_w : the norm of eigen vector3
+                    poleOdom[4] = segCloudMat.colwise().mean().x(); // p_x
+                    poleOdom[5] = segCloudMat.colwise().mean().y(); // p_y
+                    poleOdom[6] = segCloudMat.colwise().mean().z(); // p_z
                     segmentedPole -> push_back(segmentedCloudIsolated->points[zidxVec.at(i)]);
                 }
             }
