@@ -51,7 +51,8 @@
 #include <thread>
 #include <mutex>
 #include <boost/circular_buffer.hpp>
-#include <odom_stream_msg/odom_stream.h>
+#include <odom_stream_msgs/odom_stream.h>
+#include <cloud_msgs/cloud_info.h>
 #include <ceres/ceres.h>
 #include <gflags/gflags.h>
 #include <glog/logging.h>

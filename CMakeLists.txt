@@ -6,17 +6,18 @@ set(CMAKE_CXX_FLAGS "-std=c++14")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
 
 find_package(catkin REQUIRED COMPONENTS
-  geometry_msgs
-  nav_msgs
-  sensor_msgs
-		odom_stream_msg
-  roscpp
-  rospy
-  rosbag
-  std_msgs
-  image_transport
-  cv_bridge
-  tf)
+		geometry_msgs
+		nav_msgs
+		sensor_msgs
+		odom_stream_msgs
+		cloud_msgs
+  		roscpp
+  		rospy
+  		rosbag
+  		std_msgs
+  		image_transport
+  		cv_bridge
+  		tf)
 
 find_package(PCL REQUIRED)
 find_package(OpenCV REQUIRED)
@@ -36,7 +37,7 @@ endif()
 
 
 catkin_package(
-  CATKIN_DEPENDS geometry_msgs nav_msgs roscpp rospy std_msgs odom_stream_msg
+  CATKIN_DEPENDS geometry_msgs nav_msgs roscpp rospy std_msgs odom_stream_msgs cloud_msgs
   DEPENDS EIGEN3 PCL 
   INCLUDE_DIRS include
 )
@@ -61,7 +62,7 @@ link_directories(
 )
 
 add_executable(pcl2RangeImgNpole src/pcl2RangeImgNpole.cpp)
-add_dependencies(pcl2RangeImgNpole ${catkin_EXPORTED_TARGETS} odom_stream_msg_gencpp)
+add_dependencies(pcl2RangeImgNpole ${catkin_EXPORTED_TARGETS} odom_stream_msgs_gencpp cloud_msgs_gencpp)
 target_link_libraries(pcl2RangeImgNpole ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
 add_executable(ascanRegistration src/scanRegistration.cpp)

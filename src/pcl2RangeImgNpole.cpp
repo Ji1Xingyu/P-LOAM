@@ -81,7 +81,7 @@ private:
 
     cloud_msgs::cloud_info segMsg; // info of segmented cloud
     std_msgs::Header cloudHeader;
-    odom_stream_msg::odom_stream poleOdomStream;
+    odom_stream_msgs::odom_stream poleOdomStream;
     float poleOdom[7];
 
     std::vector<std::pair<int8_t, int8_t> > neighborIterator; // neighbor iterator for segmentaiton process
@@ -171,7 +171,6 @@ public:
         segmentedCloudIsolated->clear();
         segmentedPole->clear();
         outlierCloud->clear();
-        poleCentreCloud->clear();
         rangeMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_32F, cv::Scalar::all(FLT_MAX));
         groundMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_8S, cv::Scalar::all(0));
         labelMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_32S, cv::Scalar::all(0));
@@ -618,18 +617,17 @@ public:
                 }
             } else{// if the buff haven't reached 3, fill in
                 for (int i = 0; i < zidxVec.size(); ++i) {
-                    poleOdom[0] = segCloudMat.colwise().mean().x(); // q_x
-                    poleOdom[1] = segCloudMat.colwise().mean().y(); // q_y
-                    poleOdom[2] = segCloudMat.colwise().mean().z(); // q_z
-                    poleOdom[3] = eigenVal[2];                                // q_w : the norm of eigen vector3
-                    poleOdom[4] = segCloudMat.colwise().mean().x(); // p_x
-                    poleOdom[5] = segCloudMat.colwise().mean().y(); // p_y
-                    poleOdom[6] = segCloudMat.colwise().mean().z(); // p_z
+                    poleOdomStream.odom_stream.push_back(segCloudMat.colwise().mean().x()); // q_x
+                    poleOdomStream.odom_stream.push_back(segCloudMat.colwise().mean().y()); // q_y
+                    poleOdomStream.odom_stream.push_back(segCloudMat.colwise().mean().z()); // q_z
+                    poleOdomStream.odom_stream.push_back(eigenVal[2]);                      // q_w : the norm of eigen vector3
+                    poleOdomStream.odom_stream.push_back(segCloudMat.colwise().mean().x()); // p_x
+                    poleOdomStream.odom_stream.push_back(segCloudMat.colwise().mean().y()); // p_y
+                    poleOdomStream.odom_stream.push_back(segCloudMat.colwise().mean().z()); // p_z
                     segmentedPole -> push_back(segmentedCloudIsolated->points[zidxVec.at(i)]);
                 }
             }
         }
-
     }
 
 
