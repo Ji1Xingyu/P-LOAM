@@ -22,6 +22,11 @@
 #include <pcl/kdtree/kdtree_flann.h>
 #include <pcl/common/common.h>
 #include <pcl/registration/icp.h>
+#include <pcl/sample_consensus/sac_model_cylinder.h>
+#include <pcl/sample_consensus/sac_model_circle.h>
+#include <pcl/sample_consensus/sac_model_plane.h>
+#include <pcl/sample_consensus/sac_model_stick.h>
+#include <pcl/sample_consensus/sac_model_line.h>
 
 #include <eigen3/Eigen/Core>
 #include <eigen3/Eigen/Eigenvalues>

@@ -61,17 +61,17 @@ link_directories(
 		${EIGEN3_INCLUDE_DIR}
 )
 
-add_executable(pcl2RangeImgNpole src/pcl2RangeImgNpole.cpp)
+add_executable(pcl2RangeImgNpole src/pcl2RangeImgNpole.cpp src/ransacFit.cpp include/aloam_velodyne/ransacFit.hpp)
 add_dependencies(pcl2RangeImgNpole ${catkin_EXPORTED_TARGETS} odom_stream_msgs_gencpp cloud_msgs_gencpp)
 target_link_libraries(pcl2RangeImgNpole ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
-add_executable(ascanRegistration src/scanRegistration.cpp)
+add_executable(ascanRegistration src/scanRegistration.cpp src/ransacFit.cpp include/aloam_velodyne/ransacFit.hpp)
 target_link_libraries(ascanRegistration ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
 add_executable(alaserOdometry src/laserOdometry.cpp)
 target_link_libraries(alaserOdometry ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${CERES_LIBRARIES})
 
-add_executable(alaserMapping src/laserMapping.cpp)
+add_executable(alaserMapping src/laserMapping.cpp src/ransacFit.cpp include/aloam_velodyne/ransacFit.hpp)
 target_link_libraries(alaserMapping ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${CERES_LIBRARIES})
 
 add_executable(kittiHelper src/kittiHelper.cpp)
